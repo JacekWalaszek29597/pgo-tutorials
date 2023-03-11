@@ -1,0 +1,26 @@
+Class : Person
+	Attribute : Name : String
+	Attribute : Surname : String
+	Attribute : Age : Int
+	Method : IntroduceYourself() : String
+
+Class : Student
+	Attribute : StudentNumber : String
+	Attribute : Avarage Mark: String
+	Method : Is_Eligible_To_Enroll(String) : Bolean
+	Method : GetSeminarsTaken() : String
+
+Class : Address
+	Attribute : Street : String
+	Attribute : City : String
+	Attribute : State : String
+	Attribute : PostalCode : String
+	Attribute : Country : String
+	Method : Validate(String) : Bolean
+	Method : OutputAsLabel(String) : String
+
+Class : Professor
+	Attribute : Salary : Double
+
+
+
