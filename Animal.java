@@ -1,22 +1,13 @@
-public class Animal {
+abstract class Animal {
+    String name;
 
-    boolean czySpi;
-    boolean czyRyczy;
-
-    public Animal(boolean czySpi, boolean czyRyczy) {
-        this.czySpi = czySpi;
-        this.czyRyczy = czyRyczy;
+    public Animal(String name) {
+        this.name = name;
     }
 
-    public boolean sleep(){
-        return czySpi = false;
-    }
+    abstract String getType();
 
-    public  void roam(){
-        System.out.println("");
-    }
-
-    public void makeNoise(){
-        System.out.println("Wrrrrr");
+    public String getName() {
+        return name;
     }
 }

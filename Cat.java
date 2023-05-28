@@ -1,10 +1,20 @@
-public class Cat extends Feline{
-    public Cat(boolean czySpi, boolean czyRyczy) {
-        super(czySpi, czyRyczy);
-    }
-    @Override
-    public void makeNoise(){
-            System.out.println("Miau");
-        }
+public class Cat extends Animal implements Moveable {
+    public Cat(String name) {
+        super(name);
     }
 
+    @Override
+    String getType() {
+        return this.getClass().getSimpleName();
+    }
+
+    @Override
+    public void start() {
+        System.out.println("Cat starts!");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("Cat stopped!");
+    }
+}
